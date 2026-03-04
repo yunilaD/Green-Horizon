@@ -1,0 +1,338 @@
+/* Sitemap wrapper with background image */
+.sitemap-wrapper {
+    background-image: url("media/sitenatures.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    padding: 40px 0;
+}
+
+/* Add a semi-transparent overlay for better readability */
+.sitemap-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.sitemap-content {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-size: 2.8rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+}
+
+/* SVG Styles */
+.sitemap-svg {
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    max-height: 800px;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+    overflow: visible;
+}
+
+/* Node styles */
+.node {
+    fill: rgba(255, 255, 255, 0.9);
+    stroke-width: 2px;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.node.home {
+    fill: rgba(134, 239, 172, 0.9);
+    stroke: #34d399;
+}
+
+.node.primary {
+    fill: rgba(167, 243, 208, 0.9);
+    stroke: #10b981;
+}
+
+.node.secondary {
+    fill: rgba(255, 255, 255, 0.9);
+    stroke: #059669;
+}
+
+.node-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    text-anchor: middle;
+    fill: #1f2937;
+    font-weight: 600;
+    pointer-events: none;
+    dominant-baseline: middle;
+}
+
+/* Connector styles */
+.connector {
+    stroke: rgba(255, 255, 255, 0.8);
+    stroke-width: 2;
+    transition: all 0.3s ease;
+}
+
+.connector.horizontal {
+    stroke-dasharray: 5, 5;
+}
+
+.connector-dot {
+    fill: #34d399;
+    r: 4;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 3px rgba(52, 211, 153, 0.5));
+}
+
+/* Interactive features */
+.node-group:hover .node,
+.node-group:focus .node {
+    transform: translateY(-3px);
+    filter: brightness(1.1) drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2));
+    cursor: pointer;
+}
+
+.node-group:hover .node.home,
+.node-group:focus .node.home {
+    fill: rgba(134, 239, 172, 1);
+    stroke: #34d399;
+    stroke-width: 3px;
+}
+
+.node-group:hover .node.primary,
+.node-group:focus .node.primary {
+    fill: rgba(167, 243, 208, 1);
+    stroke: #10b981;
+    stroke-width: 3px;
+}
+
+.node-group:hover .node.secondary,
+.node-group:focus .node.secondary {
+    fill: rgba(255, 255, 255, 1);
+    stroke: #059669;
+    stroke-width: 3px;
+}
+
+/* Connected nodes highlight effect */
+.node-group:hover + .connector,
+.node-group:focus + .connector {
+    stroke: #34d399;
+    stroke-width: 3;
+}
+
+/* Focus styles for accessibility */
+.node-group:focus {
+    outline: none;
+}
+
+.node-group:focus .node {
+    stroke-width: 3;
+    stroke: #34d399;
+}
+
+/* Accessibility - Screen reader only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Fix for SVG in Safari */
+.node-link {
+    cursor: pointer;
+}
+
+/* Container for the footer */
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Legend for sitemap */
+.sitemap-legend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+}
+
+.legend-color.home {
+    background-color: rgba(134, 239, 172, 0.9);
+    border: 2px solid #34d399;
+}
+
+.legend-color.primary {
+    background-color: rgba(167, 243, 208, 0.9);
+    border: 2px solid #10b981;
+}
+
+.legend-color.secondary {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #059669;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .sitemap-content {
+        padding: 20px;
+        margin: 0 20px;
+    }
+
+    .sitemap-svg {
+        transform: scale(0.9);
+        transform-origin: center;
+        min-height: 540px;
+    }
+}
+
+@media (max-width: 992px) {
+    .sitemap-svg {
+        transform: scale(0.8);
+        min-height: 480px;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+        margin-bottom: 30px;
+    }
+}
+
+/* Update the mobile media queries */
+@media (max-width: 768px) {
+    .sitemap-svg {
+        transform: scale(0.7);
+        min-height: 800px; /* Increased height */
+        width: 100%; /* Reset width */
+        margin: 0; /* Reset margin */
+    }
+
+    .sitemap-content {
+        border-radius: 15px;
+        overflow-x: auto;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        max-height: 85vh; /* Increased max height */
+        padding: 20px 10px 60px; /* Added more bottom padding */
+    }
+}
+
+@media (max-width: 576px) {
+    .sitemap-svg {
+        transform: scale(0.55); /* Reduced scale */
+        min-height: 900px; /* Increased height */
+        width: 100%;
+        margin: 0;
+        transform-origin: top center; /* Adjust transform origin */
+    }
+
+    .sitemap-content {
+        padding: 15px 5px 60px;
+        max-height: 88vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .sitemap-svg {
+        transform: scale(0.45); /* Further reduced scale */
+        min-height: 1000px; /* Further increased height */
+        width: 100%;
+        margin: 0;
+        transform-origin: top center;
+    }
+
+    .sitemap-content {
+        padding: 10px 5px 60px;
+        max-height: 90vh;
+    }
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add focus styles for keyboard navigation */
+.node-group:focus-visible {
+    outline: 2px solid #34d399;
+    outline-offset: 2px;
+    border-radius: 15px;
+}
+
+.node-group:focus-visible .node {
+    transform: translateY(-3px);
+    filter: brightness(1.1) drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2));
+}
+
+/* Skip to content for keyboard users */
+.skip-to-content {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.skip-to-content:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    background: #34d399;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+}

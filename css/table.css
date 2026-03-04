@@ -1,0 +1,346 @@
+/* Endangered Animals Table Styles */
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page-title h1 {
+    font-family: "Chelsea Market", cursive;
+    font-size: 2.5rem;
+    color: #084913;
+    margin-bottom: 15px;
+}
+
+.page-title p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Table Controls */
+.table-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    padding: 0 20px;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.search-container input {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    width: 250px;
+    font-size: 14px;
+}
+
+.search-container button {
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #2e7d32;
+}
+
+.filter-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.filter-container select {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 14px;
+    min-width: 150px;
+}
+
+/* Table Container */
+.table-container {
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: whitesmoke;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #f0f0f0;
+}
+
+th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+}
+
+th.sortable {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+th.sortable:hover {
+    background-color: #e9e9e9;
+}
+
+th i {
+    margin-left: 5px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background-color: rgba(8, 73, 19,0.5);
+}
+
+/* Status Badges */
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.status.critical {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.status.endangered {
+    background-color: #fff8e1;
+    color: #ff8f00;
+}
+
+.status.vulnerable {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+/* Detail Button */
+.details-btn {
+    background-color: #85b632;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 13px;
+}
+
+.details-btn:hover {
+    background-color: #6a9129;
+}
+
+
+/* Stats Section */
+.stats-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.stats-section h2 {
+    text-align: center;
+    font-family: "Chelsea Market", cursive;
+    font-size: 1.8rem;
+    color: #084913;
+    margin-bottom: 30px;
+}
+
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.stat-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-icon i {
+    font-size: 30px;
+    color: white;
+}
+
+.critical-icon {
+    background-color: #c62828;
+}
+
+.endangered-icon {
+    background-color: #ff8f00;
+}
+
+.vulnerable-icon {
+    background-color: #2e7d32;
+}
+
+.stat-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.stat-info p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.stat-count {
+    font-size: 18px;
+    font-weight: 600;
+    color: #084913;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
+
+/* Animal Background */
+.AnimalBackground {
+    background-image: url("media/homebg.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+/* Container for footer alignment */
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .table-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .search-container input {
+        flex: 1;
+    }
+
+    .filter-container {
+        width: 100%;
+    }
+
+    .filter-container select {
+        flex: 1;
+    }
+
+    .animal-detail-content {
+        flex-direction: column;
+    }
+
+    .page-title h1 {
+        font-size: 2rem;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    th,
+    td {
+        padding: 10px;
+    }
+
+    .page-title h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-col {
+        margin-bottom: 30px;
+        width: 50%;
+    }
+}
+
+@media (max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+

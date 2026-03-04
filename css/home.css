@@ -1,0 +1,359 @@
+/* Improved Home CSS */
+.container {
+    margin: auto;
+    max-width: 1170px;
+}
+
+.footer-col ul li a {
+    border: none;
+    color: #bbbbbb;
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: -20px;
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+
+.background {
+    background-image: url("media/homebg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 1200px;
+    position: relative;
+}
+
+
+/* Hero Section Styling */
+.hero-section {
+    height: 500px;
+    position: relative;
+    background-image: url("media/herobg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.overlay-text {
+    position: relative;
+    max-width: 800px;
+    text-align: center;
+    padding: 0 20px;
+    z-index: 10;
+}
+
+.overlay-text h1 {
+    font-family: "Chelsea Market", cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.action-button {
+    margin-top: 30px;
+}
+
+.action-button a {
+    display: inline-block;
+    background-color: #85b632;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.action-button a:hover {
+    background-color: #388e3c;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Impact Stats Section */
+.stat-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: -40px auto 60px;
+    max-width: 1000px;
+    position: relative;
+    z-index: 20;
+}
+
+.stat-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-10px);
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #388e3c;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Content Section */
+.content-section {
+    max-width: 1200px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #084913;
+    margin-bottom: 40px;
+    position: relative;
+    font-family: "Chelsea Market", cursive;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #85b632;
+}
+
+/* Tile Container */
+.tile-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.tile-content {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.tile-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.thumbnail {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.tile-content:hover .thumbnail img {
+    transform: scale(1.1);
+}
+
+.tile-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(56, 142, 60, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tile-overlay i {
+    font-size: 3rem;
+    color: white;
+}
+
+.tile-content:hover .tile-overlay {
+    opacity: 1;
+}
+
+.tile-details {
+    padding: 20px;
+    background-color: white;
+}
+
+.tile-details h3 {
+    color: #084913;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.tile-details p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    color: #388e3c;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.read-more i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.read-more:hover {
+    color: #85b632;
+}
+
+.read-more:hover i {
+    transform: translateX(5px);
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .featured-project {
+        flex-direction: column;
+    }
+
+    .featured-image {
+        width: 100%;
+        order: -1;
+    }
+
+    .impact-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .stat-item {
+        width: 80%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .overlay-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section {
+        height: 400px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .featured-content {
+        padding: 30px 20px;
+    }
+
+    .featured-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .featured-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tile-container {
+        grid-template-columns: 1fr;
+    }
+
+    .overlay-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .cta-button a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+.member-details {
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    box-sizing: border-box;
+    color: #fff;
+    left: 0;
+    opacity: 0;
+    padding: 5px;
+    position: absolute;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.nature-image {
+    height: auto;
+    position: relative;
+    width: 100%;
+}
+
+.page-editor-link ol {
+    list-style: lower-roman;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
