@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback form</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+</head>
+<body>
+<header class="header">
+    <img src="media/greenhorizon.png" alt="un">
+    <ul class="navbar">
+        <li><a href="home.html"><b>Home</b></a></li>
+        <li><a href="sitemap.html"><b>Sitemap</b></a></li>
+        <li><a href="feedback.html"><b>Feedback</b></a></li>
+        <li><a href="team.html"><b>About Us</b></a></li>
+        <li><a href="profile.html"><b>Profile</b></a></li>
+    </ul>
+</header>
+<!-- This shows the HTML structure changes you should make to your feedback.html file -->
+<div class="feedbackground">
+    <!-- Decorative elements -->
+    <div class="decorative-circle circle-1"></div>
+    <div class="decorative-circle circle-2"></div>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <h1>Feedback Form</h1>
+        <hr>
+        <input type="hidden" name="access_key" value="0daa2a8e-3ed1-45d3-92ed-9eed2ddf8689">
+
+        <div class="form-group">
+            <p>1. Enter your name</p>
+            <input class="name" type="text" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <p>2. Enter your email</p>
+            <input class="email" type="email" name="email" placeholder="Enter your email address" required>
+        </div>
+
+        <div class="form-group">
+            <p>3. Was the information on our website helpful?</p>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="helpful-yes" name="helpful_info" required>
+                    <label for="helpful-yes">Yes</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="helpful-no" name="helpful_info" required>
+                    <label for="helpful-no">No</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <p>4. Did you find the content easy to understand?</p>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="understand-yes" name="easy_understand" required>
+                    <label for="understand-yes">Yes</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="understand-no" name="easy_understand" required>
+                    <label for="understand-no">No</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <p>5. Were you able to navigate the website easily?</p>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="navigate-yes" name="easy_navigate" required>
+                    <label for="navigate-yes">Yes</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="navigate-no" name="easy_navigate" required>
+                    <label for="navigate-no">No</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <p>6. What improvements would you suggest?</p>
+            <textarea placeholder="Write your idea here..." name="improvements" rows="5"></textarea>
+        </div>
+
+        <div class="form-group">
+            <p>7. Rate us. 1 if our service was terrible and 5 if our service was perfect.</p>
+            <div class="rating-group">
+                <div class="rating-option">
+                    <input type="radio" id="rate-1" name="rate" required>
+                    <label for="rate-1">1</label>
+                </div>
+                <div class="rating-option">
+                    <input type="radio" id="rate-2" name="rate" required>
+                    <label for="rate-2">2</label>
+                </div>
+                <div class="rating-option">
+                    <input type="radio" id="rate-3" name="rate" required>
+                    <label for="rate-3">3</label>
+                </div>
+                <div class="rating-option">
+                    <input type="radio" id="rate-4" name="rate" required>
+                    <label for="rate-4">4</label>
+                </div>
+                <div class="rating-option">
+                    <input type="radio" id="rate-5" name="rate" required>
+                    <label for="rate-5">5</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </div>
+    </form>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>More Content</h4>
+                <ul>
+                    <li><a href="content_ST1.html">Green Horizon</a></li>
+                    <li><a href="content_ST2.html">Forests: The Lungs of Our Planet</a></li>
+                    <li><a href="content_ST3.html">Protecting Earth's Terrestrial Ecosystems </a></li>
+                    <li><a href="content_ST4.html">Wildlife Conservation</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="team.html">About Us</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                    <a href="#"><i class="bx bxl-tiktok"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="#"><i class="bx bxl-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Editor Pages</h4>
+                <ul>
+                    <li><a href="pageEditor_ST1.html">Editor 1</a></li>
+                    <li><a href="pageEditor_ST2.html">Editor 2</a></li>
+                    <li><a href="pageEditor_ST3.html">Editor 3</a></li>
+                    <li><a href="pageEditor_ST4.html">Editor 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <p>&copy; 2024 Green Horizon. All rights reserved</p>
+    </div>
+    <div class="page editor">
+        <p style="color: white;">Student 3</p>
+        <a class="page-editor-link" href="pageEditor_ST3.html">Ravishka Michele</a>
+    </div>
+</footer>
+</body>
+</html>

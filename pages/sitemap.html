@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sitemap</title>
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link rel="stylesheet" type="text/css" href="sitemap.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">Skip to content</a>
+
+<header class="header">
+    <img src="media/greenhorizon.png" alt="green horizon"class="logo">
+    <ul class="navbar">
+        <li><a href="home.html"><b>Home</b></a></li>
+        <li><a href="sitemap.html"><b>Sitemap</b></a></li>
+        <li><a href="feedback.html"><b>Feedback</b></a></li>
+        <li><a href="team.html"><b>About Us</b></a></li>
+        <li><a href="profile.html"><b>Profile</b></a></li>
+    </ul>
+</header>
+
+<main id="main-content">
+    <div class="sitemap-wrapper">
+        <div class="sitemap-content">
+            <h1>Sitemap</h1>
+
+            <div class="sitemap-legend">
+                <div class="legend-item">
+                    <div class="legend-color home"></div>
+                    <span>Home Page</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color primary"></div>
+                    <span>Main Sections</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color secondary"></div>
+                    <span>Sub Pages</span>
+                </div>
+            </div>
+
+            <svg class="sitemap-svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid meet" aria-labelledby="sitemap-title" role="img">
+                <title id="sitemap-title">Sitemap</title>
+                <desc>A hierarchical diagram showing the structure of the website with parent and child pages.</desc>
+
+                <!-- Home Node (Level 1) -->
+                <g class="node-group home-node" tabindex="0" aria-label="Home page, main landing page">
+                    <a href="home.html" class="node-link">
+                        <rect x="550" y="50" width="100" height="50" rx="15" class="node home"></rect>
+                        <text x="600" y="80" class="node-text">Home</text>
+                    </a>
+                </g>
+
+                <!-- Vertical connector from Home -->
+                <line x1="600" y1="100" x2="600" y2="150" class="connector"></line>
+
+                <!-- Main horizontal connector for all parent pages -->
+                <line x1="100" y1="150" x2="1100" y2="150" class="connector horizontal" stroke-dasharray="5,5"></line>
+
+                <!-- All Parent Pages in One Line (Level 2) -->
+                <!-- Content Pages -->
+                <g class="node-group" tabindex="0" aria-label="Content Pages section">
+                    <a href="/content" class="node-link">
+                        <rect x="100" y="175" width="120" height="50" rx="15" class="node primary"></rect>
+                        <text x="160" y="205" class="node-text">Content Pages</text>
+                    </a>
+                </g>
+                <line x1="160" y1="150" x2="160" y2="175" class="connector"></line>
+
+                <!-- Volunteer -->
+                <g class="node-group" tabindex="0" aria-label="Volunteer section">
+                    <a href="volunteer.html" class="node-link">
+                        <rect x="250" y="175" width="120" height="50" rx="15" class="node primary"></rect>
+                        <text x="310" y="205" class="node-text">Volunteer</text>
+                    </a>
+                </g>
+                <line x1="310" y1="150" x2="310" y2="175" class="connector"></line>
+
+                <!-- Table -->
+                <g class="node-group" tabindex="0" aria-label="Table section">
+                    <a href="table.html" class="node-link">
+                        <rect x="400" y="175" width="120" height="50" rx="15" class="node primary"></rect>
+                        <text x="460" y="205" class="node-text">Table</text>
+                    </a>
+                </g>
+                <line x1="460" y1="150" x2="460" y2="175" class="connector"></line>
+
+                <!-- User Profile -->
+                <g class="node-group" tabindex="0" aria-label="User Profile section">
+                    <a href="profile.html" class="node-link">
+                        <rect x="550" y="175" width="120" height="50" rx="15" class="node primary"></rect>
+                        <text x="610" y="205" class="node-text">User Profile</text>
+                    </a>
+                </g>
+                <line x1="610" y1="150" x2="610" y2="175" class="connector"></line>
+
+                <!-- Feedback -->
+                <g class="node-group" tabindex="0" aria-label="Feedback section">
+                    <a href="feedback.html" class="node-link">
+                        <rect x="700" y="175" width="120" height="50" rx="15" class="node primary"></rect>
+                        <text x="760" y="205" class="node-text">Feedback</text>
+                    </a>
+                </g>
+                <line x1="760" y1="150" x2="760" y2="175" class="connector"></line>
+
+                <!-- Sitemap -->
+                <g class="node-group" tabindex="0" aria-label="Sitemap section, current page">
+                    <a href="sitemap.html" class="node-link">
+                        <rect x="850" y="175" width="120" height="50" rx="15" class="node primary"></rect>
+                        <text x="910" y="205" class="node-text">Sitemap</text>
+                    </a>
+                </g>
+                <line x1="910" y1="150" x2="910" y2="175" class="connector"></line>
+
+                <!-- Team -->
+                <g class="node-group" tabindex="0" aria-label="Team section with student pages">
+                    <a href="team.html" class="node-link">
+                        <rect x="1000" y="175" width="120" height="50" rx="15" class="node primary"></rect>
+                        <text x="1060" y="205" class="node-text">Team</text>
+                    </a>
+                </g>
+                <line x1="1060" y1="150" x2="1060" y2="175" class="connector"></line>
+
+                <!-- Content Pages Children (Vertical Layout) -->
+                <!-- Vertical connector from Content Pages -->
+                <line x1="160" y1="225" x2="160" y2="500" class="connector"></line>
+
+                <!-- Content 1 -->
+                <g class="node-group" tabindex="0" aria-label="Content 1 section">
+                    <a href="content_ST1.html" class="node-link">
+                        <rect x="20" y="300" width="100" height="40" rx="15" class="node secondary"></rect>
+                        <text x="70" y="325" class="node-text">Content 1</text>
+                    </a>
+                </g>
+                <line x1="160" y1="320" x2="120" y2="320" class="connector"></line>
+
+                <!-- Content 2 -->
+                <g class="node-group" tabindex="0" aria-label="Content 2 section">
+                    <a href="content_ST2.html" class="node-link">
+                        <rect x="20" y="360" width="100" height="40" rx="15" class="node secondary"></rect>
+                        <text x="70" y="385" class="node-text">Content 2</text>
+                    </a>
+                </g>
+                <line x1="160" y1="380" x2="120" y2="380" class="connector"></line>
+
+                <!-- Content 3 -->
+                <g class="node-group" tabindex="0" aria-label="Content 3 section">
+                    <a href="content_ST3.html" class="node-link">
+                        <rect x="20" y="420" width="100" height="40" rx="15" class="node secondary"></rect>
+                        <text x="70" y="445" class="node-text">Content 3</text>
+                    </a>
+                </g>
+                <line x1="160" y1="440" x2="120" y2="440" class="connector"></line>
+
+                <!-- Content 4 -->
+                <g class="node-group" tabindex="0" aria-label="Content 4 section">
+                    <a href="content_ST4.html" class="node-link">
+                        <rect x="20" y="480" width="100" height="40" rx="15" class="node secondary"></rect>
+                        <text x="70" y="505" class="node-text">Content 4</text>
+                    </a>
+                </g>
+                <line x1="160" y1="500" x2="120" y2="500" class="connector"></line>
+
+                <!-- Student 4 -->
+                <g class="node-group" tabindex="0" aria-label="Student 4 profile page">
+                    <a href="pageEditor_ST4.html" class="node-link">
+                        <rect x="1100" y="540" width="100" height="40" rx="15" class="node secondary"></rect>
+                        <text x="1150" y="565" class="node-text">Student 4</text>
+                    </a>
+                </g>
+                <line x1="1060" y1="560" x2="1100" y2="560" class="connector"></line>
+
+                <!-- Team Children (Vertical Layout) -->
+                <!-- Add vertical connector from Team -->
+                <line x1="1060" y1="225" x2="1060" y2="560" class="connector"></line>
+
+                <!-- Student 1 -->
+                <g class="node-group" tabindex="0" aria-label="Student 1 profile page">
+                    <a href="pageEditor_ST1.html" class="node-link">
+                        <rect x="1100" y="360" width="100" height="40" rx="15" class="node secondary"></rect>
+                        <text x="1150" y="385" class="node-text">Student 1</text>
+                    </a>
+                </g>
+                <line x1="1060" y1="380" x2="1100" y2="380" class="connector"></line>
+
+                <!-- Student 2 -->
+                <g class="node-group" tabindex="0" aria-label="Student 2 profile page">
+                    <a href="pageEditor_ST2.html" class="node-link">
+                        <rect x="1100" y="420" width="100" height="40" rx="15" class="node secondary"></rect>
+                        <text x="1150" y="445" class="node-text">Student 2</text>
+                    </a>
+                </g>
+                <line x1="1060" y1="440" x2="1100" y2="440" class="connector"></line>
+
+                <!-- Student 3 (already exists, but fixing the rect placement) -->
+                <g class="node-group" tabindex="0" aria-label="Student 3 profile page">
+                    <a href="pageEditor_ST3.html" class="node-link">
+                        <rect x="1100" y="480" width="100" height="40" rx="15" class="node secondary"></rect>
+                        <text x="1150" y="505" class="node-text">Student 3</text>
+                    </a>
+                </g>
+                <line x1="1060" y1="500" x2="1100" y2="500" class="connector"></line>
+
+                <!-- Connection dots for all parent pages -->
+                <circle cx="160" cy="150" r="4" class="connector-dot"></circle>
+                <circle cx="310" cy="150" r="4" class="connector-dot"></circle>
+                <circle cx="460" cy="150" r="4" class="connector-dot"></circle>
+                <circle cx="610" cy="150" r="4" class="connector-dot"></circle>
+                <circle cx="760" cy="150" r="4" class="connector-dot"></circle>
+                <circle cx="910" cy="150" r="4" class="connector-dot"></circle>
+                <circle cx="1060" cy="150" r="4" class="connector-dot"></circle>
+
+                <!-- Connection dots for Content Pages children -->
+                <circle cx="160" cy="320" r="4" class="connector-dot"></circle>
+                <circle cx="160" cy="380" r="4" class="connector-dot"></circle>
+                <circle cx="160" cy="440" r="4" class="connector-dot"></circle>
+                <circle cx="160" cy="500" r="4" class="connector-dot"></circle>
+
+                <!-- Connection dots for Team children -->
+                <circle cx="1060" cy="380" r="4" class="connector-dot"></circle>
+                <circle cx="1060" cy="440" r="4" class="connector-dot"></circle>
+                <circle cx="1060" cy="500" r="4" class="connector-dot"></circle>
+                <circle cx="1060" cy="560" r="4" class="connector-dot"></circle>
+            </svg>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>More Content</h4>
+                <ul>
+                    <li><a href="content_ST1.html">Green Horizon</a></li>
+                    <li><a href="content_ST2.html">Forests: The Lungs of Our Planet</a></li>
+                    <li><a href="content_ST3.html">Protecting Earth's Terrestrial Ecosystems </a></li>
+                    <li><a href="content_ST4.html">Wildlife Conservation</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="team.html">About Us</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                    <a href="#"><i class="bx bxl-tiktok"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="#"><i class="bx bxl-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Editor Pages</h4>
+                <ul>
+                    <li><a href="pageEditor_ST1.html">Editor 1</a></li>
+                    <li><a href="pageEditor_ST2.html">Editor 2</a></li>
+                    <li><a href="pageEditor_ST3.html">Editor 3</a></li>
+                    <li><a href="pageEditor_ST4.html">Editor 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <p>&copy; 2024 Green Horizon. All rights reserved</p>
+    </div>
+    <div class="page editor">
+        <p style="color: white;">Student 2</p>
+        <a class="page-editor-link" href="pageEditor_ST4.html">Vidu Tennakoon</a>
+    </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>
+    // Enhanced keyboard navigation support
+    document.addEventListener('DOMContentLoaded', function() {
+        const nodeGroups = document.querySelectorAll('.node-group');
+        let currentFocusIndex = -1;
+
+        // Function to handle keyboard navigation between nodes
+        function handleKeyNavigation(e) {
+            if (e.key === 'Tab') {
+                // Let the browser handle tab navigation naturally
+                return;
+            }
+
+            if (e.key === 'Enter' || e.key === ' ') {
+                const link = document.activeElement.querySelector('.node-link');
+                if (link) {
+                    link.click();
+                    e.preventDefault();
+                }
+            }
+
+            // Arrow key navigation between nodes
+            if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.key)) {
+                e.preventDefault(); // Prevent scrolling
+
+                // Find the currently focused node
+                currentFocusIndex = Array.from(nodeGroups).findIndex(node =>
+                    node === document.activeElement);
+
+                if (currentFocusIndex === -1) {
+                    // If no node is focused, focus the first one
+                    currentFocusIndex = 0;
+                } else {
+                    // Move focus based on arrow key
+                    if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+                        currentFocusIndex = Math.max(0, currentFocusIndex - 1);
+                    } else if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+                        currentFocusIndex = Math.min(nodeGroups.length - 1, currentFocusIndex + 1);
+                    }
+                }
+
+                // Focus the new node
+                nodeGroups[currentFocusIndex].focus();
+            }
+        }
+
+        // Add keyboard event listener to the document
+        document.addEventListener('keydown', handleKeyNavigation);
+
+        // Set up each node for keyboard and mouse interaction
+        nodeGroups.forEach(group => {
+            // Ensure all nodes are keyboard focusable
+            if (!group.hasAttribute('tabindex')) {
+                group.setAttribute('tabindex', '0');
+            }
+
+            // Add animation effect on hover
+            group.addEventListener('mouseenter', function() {
+                const node = this.querySelector('.node');
+                node.style.transform = 'translateY(-3px)';
+                node.style.transition = 'all 0.3s ease';
+            });
+
+            group.addEventListener('mouseleave', function() {
+                const node = this.querySelector('.node');
+                node.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Highlight current page in sitemap
+        const currentPath = window.location.pathname;
+        const sitemapNodes = document.querySelectorAll('.node-group a[href="sitemap.html"]');
+        sitemapNodes.forEach(node => {
+            if (currentPath.includes('sitemap') || currentPath === '/sitemap.html') {
+                const nodeRect = node.querySelector('rect');
+                if (nodeRect) {
+                    nodeRect.style.fill = '#34d399';
+                    nodeRect.style.stroke = '#059669';
+                    nodeRect.style.strokeWidth = '3px';
+                }
+            }
+        });
+
+        // Adjust SVG viewBox for better mobile responsiveness
+        function adjustSvgViewBox() {
+            const svg = document.querySelector('.sitemap-svg');
+            if (svg) {
+                if (window.innerWidth <= 400) {
+                    // Adjusted viewBox to show more vertical content
+                    svg.setAttribute('viewBox', '300 0 600 1000');
+                } else if (window.innerWidth <= 576) {
+                    svg.setAttribute('viewBox', '200 0 800 900');
+                } else if (window.innerWidth <= 768) {
+                    svg.setAttribute('viewBox', '100 0 1000 850');
+                } else {
+                    svg.setAttribute('viewBox', '0 0 1200 800');
+                }
+            }
+        }
+
+        // Run on load and resize
+        adjustSvgViewBox();
+        window.addEventListener('resize', adjustSvgViewBox);
+
+        // Add ARIA live region for screen reader announcements
+        const liveRegion = document.createElement('div');
+        liveRegion.setAttribute('aria-live', 'polite');
+        liveRegion.classList.add('sr-only');
+        document.body.appendChild(liveRegion);
+
+        // Announce current section when focused
+        nodeGroups.forEach(group => {
+            group.addEventListener('focus', function() {
+                const ariaLabel = this.getAttribute('aria-label');
+                if (ariaLabel) {
+                    liveRegion.textContent = 'Focused on: ' + ariaLabel;
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
+

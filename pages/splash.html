@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="4; url=home.html">
+    <link rel="stylesheet" href="SplashScreen.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Welcome to Green Horizon</title>
+</head>
+<body>
+<div class="video-container">
+    <video autoplay muted loop>
+        <source src="media/background-video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="video-overlay"></div>
+</div>
+
+<div class="splash">
+    <div class="splash-content">
+        <div class="logo-container">
+            <div class="logo">
+                <i class='bx bx-leaf'></i>
+            </div>
+        </div>
+
+        <h1 class="title">Welcome to <span>Life On Land</span></h1>
+
+        <div class="mission">
+            <p>Our Mission is to Promote the Protection, Restoration, and Sustainable use of Ecosystems. We are Committed to Raising Awareness about the Importance of Conserving life on land — from Forests and Wildlife to Soil Health and Biodiversity. Together, we aim to Inspire Action for a Greener, More Sustainable Future.</p>
+        </div>
+
+        <div class="team-section">
+            <h3>Our Team</h3>
+            <div class="team-members">
+                <div class="member">
+                    <div class="member-avatar">
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <span>A.M.C.G. Senevirathne</span>
+                </div>
+                <div class="member">
+                    <div class="member-avatar">
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <span>Y.M. Dissanayake</span>
+                </div>
+                <div class="member">
+                    <div class="member-avatar">
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <span>D.F.R. Michele</span>
+                </div>
+                <div class="member">
+                    <div class="member-avatar">
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <span>V.S. Tennakoon</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="loader-container">
+            <div class="leaf-loader">
+                <i class='bx bxs-leaf'></i>
+                <i class='bx bxs-leaf'></i>
+                <i class='bx bxs-leaf'></i>
+            </div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <p class="redirect-text">Redirecting to homepage...</p>
+        </div>
+    </div>
+</div>
+<script>
+    // Progress bar animation
+    document.addEventListener('DOMContentLoaded', function() {
+        const progress = document.querySelector('.progress');
+        let width = 0;
+        const interval = setInterval(frame, 40); // 6 seconds total (6000ms / 60ms = 100 steps)
+
+        function frame() {
+            if (width >= 100) {
+                clearInterval(interval);
+            } else {
+                width++;
+                progress.style.width = width + '%';
+            }
+        }
+    });
+</script>
+</body>
+</html>
+

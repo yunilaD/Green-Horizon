@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - Yunila Dissnayake</title>
+    <link rel="stylesheet" href="pageEditor_validator.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+
+
+</head>
+<body>
+
+<!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+<header class="header">
+    <img src="media/greenhorizon.png" alt="Green Horizon logo" class="logo">
+    <ul class="navbar">
+        <li><a href="home.html"><b>Home</b></a></li>
+        <li><a href="sitemap.html"><b>Sitemap</b></a></li>
+        <li><a href="feedback.html"><b>Feedback</b></a></li>
+        <li><a href="team.html"><b>About Us</b></a></li>
+        <li><a href="profile.html"><b>Profile</b></a></li>
+    </ul>
+</header>
+
+<div class="stud">
+    <h2>Yunila Dissnayake - Student 2</h2>
+</div>
+
+<div class="container">
+    <!-- Main content area -->
+    <main>
+
+        <!-- Update those first three sections for the pages you were responsible to implement -->
+
+        <section>
+            <div class="box1">
+                <h2 id="home">Home Page and Global CSS</h2>
+                <h3>Technical Description</h3>
+                <p>The Home page was designed to serve as an engaging landing page that immediately communicates the site's purpose and mission. The HTML structure follows semantic principles with a clear document hierarchy, utilizing the following key elements:</p>
+                <p>The page begins with a responsive header that includes our logo and navigation menu, implemented using unordered lists for accessibility. The hero section features a large background image with overlay text to create visual impact, implemented with div elements and CSS positioning.</p>
+                <p>Key CSS techniques used include:</p>
+                <ol>
+                    <li>Flexbox layout for navigation bar and content tiles (display: flex) for fluid positioning</li>
+                    <li>CSS positioning (position: relative/absolute) for overlay text and elements</li>
+                    <li>Box-sizing: border-box to maintain consistent element dimensions</li>
+                    <li>Media queries for responsive design across different screen sizes</li>
+                    <li>CSS transitions for hover effects on navigation links and buttons</li>
+                    <li>Icon integration using Boxicons (bx icons class) for visual enhancement</li>
+                </ol>
+                <p>The global CSS establishes consistent styling across the website with a color scheme dominated by green tones that reinforce the environmental theme. Typography uses the Poppins font family for readability, while the responsive footer is structured with flexbox for optimal layout across devices.</p>
+
+                <h3>Accessibility</h3>
+                <p>Several measures were implemented to ensure accessibility:</p>
+                <ol>
+                    <li>Semantic HTML5 tags for improved screen reader navigation</li>
+                    <li>Alt text for all images, including the logo and initiative thumbnails</li>
+                    <li>Sufficient color contrast between text and backgrounds (green text on white, white text on dark backgrounds)</li>
+                    <li>Responsive design that works across various screen sizes and devices</li>
+                    <li>Navigation links with clear hover states for better user feedback</li>
+                    <li>Consistent heading hierarchy (h1, h2, h3) throughout the page</li>
+                    <li>Focus states for interactive elements to aid keyboard navigation</li>
+                </ol>
+
+                <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                <p><a href="validation_ST2.html#HomeVal">To the validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                <h3>Link to the page</h3>
+                <p><a href="home.html" target="_blank">Home Page</a></p>
+            </div>
+        </section>
+
+        <section>
+            <div class="box1">
+            <h2 id="table">Table</h2>
+            <h3>Technical Description</h3>
+            <p>The Endangered Animals table page was designed to present structured data about endangered species in an interactive and informative format. The page utilizes the following key HTML and CSS techniques:</p>
+            <p>The HTML structure employs semantic table elements (table, thead, tbody, tr, th, td) to organize data in a logical way. Data attributes (data-status, data-region) were added to table rows to enable filtering functionality. The table includes sortable columns, search functionality, and filtering options.</p>
+            <p>Key CSS techniques used include:</p>
+            <ol>
+                <li>Custom table styling with border-collapse for clean grid lines</li>
+                <li>Status indicators using colored spans with distinct classes (.critical, .endangered, .vulnerable)</li>
+                <li>Interactive elements including search input, filter dropdowns, and detail buttons</li>
+                <li>Responsive table container with overflow handling for smaller screens</li>
+                <li>Boxicons integration for sort indicators and status icons</li>
+                <li>Stat cards using flexbox for the Conservation Status Overview section</li>
+                <li>Consistent color coding (red for critical, orange for endangered, yellow for vulnerable) to visually communicate status</li>
+            </ol>
+
+            <h3>Accessibility</h3>
+            <p>The table page incorporates numerous accessibility features:</p>
+            <ol>
+                <li>Proper table structure with thead and tbody for screen reader navigation</li>
+                <li>Descriptive table headers for each column</li>
+                <li>Color is not the only indicator of status - text labels accompany each color</li>
+                <li>Search and filter controls are clearly labeled</li>
+                <li>Button elements used for interactive controls rather than styled divs</li>
+                <li>Sufficient color contrast for all text elements</li>
+                <li>Visual indicators (icons) paired with text for dual communication methods</li>
+                <li>Responsive design that maintains readability on different screen sizes</li>
+            </ol>
+
+            <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+            <p><a href="validation_ST2.html#TableVal">To the validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+
+            <h3>Link to the page</h3>
+            <p><a href="table.html" target="_blank">Table</a></p>
+            </div>
+        </section>
+
+        <section>
+            <div class="box1">
+            <h2 id="content">Content Page</h2>
+            <h3>Technical Description</h3>
+            <p>The content page was planned to provide detailed information about wildlife conservation efforts, but is still in development. It will follow the established design patterns from the home page and table page, incorporating:</p>
+            <ol>
+                <li>A consistent header and footer structure for site-wide navigation</li>
+                <li>Content sections with clear heading hierarchy</li>
+                <li>Responsive media elements (images, possibly videos) with descriptive alt text</li>
+                <li>Interactive elements where appropriate to engage users</li>
+                <li>Consistent typography using the Poppins font family</li>
+                <li>The established green color scheme to maintain brand identity</li>
+            </ol>
+            <p>The page will be structured to present information in a logical flow, using semantic HTML5 elements (section, article, aside) to organize content appropriately.</p>
+
+            <h3>Accessibility</h3>
+            <p>The planned content page will implement accessibility features including:</p>
+            <ol>
+                <li>Semantic HTML structure for screen reader compatibility</li>
+                <li>Descriptive alt text for all images</li>
+                <li>Keyboard navigable interactive elements</li>
+                <li>ARIA labels where appropriate for complex interactive components</li>
+                <li>Consistent heading structure for logical document outline</li>
+                <li>Sufficient color contrast for all text content</li>
+                <li>Responsive design to accommodate various screen sizes and devices</li>
+            </ol>
+
+            <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+            <p><a href="validation_ST2.html#contentVal">To the validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+
+            <h3>Link to the page</h3>
+            <p><a href="content_ST2.html" target="_blank">Content Page</a></p>
+            </div>
+        </section>
+
+        <section>
+            <div class="box1">
+            <h2 id="challenge"> Challenges and Lessons Learned</h2>
+            <p>During the implementation of these pages, several challenges were encountered:</p>
+            <ol>
+                <li><strong>Responsive Design:</strong> Creating a layout that worked seamlessly across different screen sizes required multiple iterations. I learned to use flexible units (%, vh/vw) instead of fixed pixels, and implemented media queries to adjust layouts for mobile devices.</li>
+                <li><strong>Table Interactivity:</strong> Implementing the filtering and sorting functionality for the endangered animals table presented challenges. I developed a better understanding of DOM manipulation techniques and data attributes.</li>
+                <li><strong>CSS Organization:</strong> Managing global styles versus page-specific styles required careful planning. I learned to structure CSS files more efficiently, using descriptive class names and avoiding overly specific selectors.</li>
+                <li><strong>Cross-browser Compatibility:</strong> Ensuring consistent appearance across different browsers required testing and adjustments. I discovered the importance of using standardized properties and vendor prefixes where necessary.</li>
+                <li><strong>Performance Optimization:</strong> Large background images affected page load times. I learned techniques for image optimization and proper sizing to balance visual quality with performance.</li>
+            </ol>
+            <p>These challenges taught me the importance of planning before coding, testing across different devices, and implementing progressive enhancement to ensure basic functionality works for all users while providing enhanced experiences for those with modern browsers.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="box1">
+            <h2 id="compliance"> Compliance</h2>
+            <p>The pages developed comply with Janet regulations for web page publication in the following ways:</p>
+            <ol>
+                <li><strong>Accessibility Standards:</strong> Pages implement WCAG guidelines with semantic HTML, alt text for images, and keyboard navigation support.</li>
+                <li><strong>Security Practices:</strong> No user data collection occurs without proper notification, and all links to external resources use secure connections where appropriate.</li>
+                <li><strong>Content Appropriateness:</strong> All content is educational and informative, with no inappropriate material. Sources are cited for factual information.</li>
+                <li><strong>Responsive Design:</strong> Pages adapt to different screen sizes, ensuring accessibility across devices as required by modern web standards.</li>
+                <li><strong>Performance Considerations:</strong> Images are optimized to reduce page load times, improving user experience and reducing bandwidth usage.</li>
+                <li><strong>Branding Guidelines:</strong> The Green Horizon branding is consistently applied throughout all pages, maintaining a professional appearance.</li>
+            </ol>
+            <p>The development process prioritized creating clean, standards-compliant code that meets both technical and regulatory requirements while delivering an engaging user experience.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="ref">References</h2>
+            <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+            <ol class="ref">
+                <li>Boxicons (2024) <i>Boxicons - High Quality Web Icons.</i> Available at: <a href="https://boxicons.com/">https://boxicons.com/</a> (Last accessed: 28 Feb 2024).</li>
+                <li>Google Fonts (2024) <i>Google Fonts - Poppins.</i> Available at: <a href="https://fonts.google.com/specimen/Poppins">https://fonts.google.com/specimen/Poppins</a> (Last accessed: 25 Feb 2024).</li>
+                <li>W3Schools (2024) <i>CSS Flexbox Guide.</i> Available at: <a href="https://www.w3schools.com/css/css3_flexbox.asp">https://www.w3schools.com/css/css3_flexbox.asp</a> (Last accessed: 22 Feb 2024).</li>
+                <li>MDN Web Docs (2024) <i>HTML Table Basics.</i> Available at: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics">https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics</a> (Last accessed: 24 Feb 2024).</li>
+                <li>IUCN Red List (2024) <i>The IUCN Red List of Threatened Species.</i> Available at: <a href="https://www.iucnredlist.org/">https://www.iucnredlist.org/</a> (Last accessed: 26 Feb 2024).</li>
+                <li>Duckett, J., 2011. <i>HTML and CSS: Design and Build Websites,</i> John Willey&Sons. Inc. Indianapolis.</li>
+            </ol>
+        </section>
+
+        <p class="top"><a href="#top">Go top</a></p>
+    </main>
+
+    <!-- Sidebar area -->
+    <aside>
+        <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+        <ul class="top-level-ul">
+            <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+            <p><u>Student 2</u></p>
+            <ul>
+                <li><a href="#home"><b>Home page</b> </a></li>
+                <li><a href="#table"><b>Table page</b></a></li>
+                <li><a href="#content" ><b>Content page</b></a></li>
+            </ul>
+
+            <li><a href="#challenge"><b>Challenges and Lessons Learned</b></a></li>
+            <li><a href="#compliance"><b>Compliance</b></a></li>
+            <li><a href="#ref"><b>References</b></a></li>
+        </ul>
+    </aside>
+</div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>More Contents</h4>
+                <ul>
+                    <li><a href="content_ST1.html">Green Horizon</a></li>
+                    <li><a href="content_ST2.html">Forests: The Lungs of Our Planet</a></li>
+                    <li><a href="content_ST3.html">Protecting Earth's Terrestrial Ecosystems </a></li>
+                    <li><a href="content_ST4.html">Wildlife Conservation</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="team.html">About Us</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                    <a href="#"><i class="bx bxl-tiktok"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="#"><i class="bx bxl-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Editor Pages</h4>
+                <ul>
+                    <li><a href="pageEditor_ST1.html">Editor 1</a></li>
+                    <li><a href="pageEditor_ST2.html">Editor 2</a></li>
+                    <li><a href="pageEditor_ST3.html">Editor 3</a></li>
+                    <li><a href="pageEditor_ST4.html">Editor 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <p>&copy; 2024 Green Horizon. All rights reserved</p>
+    </div>
+    <div class="page editor">
+        <p style="color: white;">Student 2</p>
+        <a class="page-editor-link" href="pageEditor_ST2.html">Yunila Dissnayake</a>
+    </div>
+
+</footer>
+</body>
+</html>

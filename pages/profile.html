@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+    <style>
+        .un-goal {
+            display: flex;
+            flex-direction: column;
+            align-items: center
+            margin: 10px;
+            text-align: center;
+        }
+
+        .un-goal-text {
+            margin-top: 5px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+<div class="page-content">
+    <header class="header">
+        <img src="media/greenhorizon.png" alt="green horizon">
+        <ul class="navbar">
+            <li><a href="home.html"><b>Home</b></a></li>
+            <li><a href="sitemap.html"><b>Sitemap</b></a></li>
+            <li><a href="feedback.html"><b>Feedback</b></a></li>
+            <li><a href="team.html"><b>About Us</b></a></li>
+            <li><a href="profile.html"><b>Profile</b></a></li>
+        </ul>
+    </header>
+
+
+    <div class="profile-container">
+        <div class="profile-grid">
+            <!-- Left Column - User Profile -->
+            <div class="profile-card user-profile">
+                <h2>Dexter Morgan</h2>
+                <div class="profile-image-container">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/profilepics.jpg-y1EdIzuKJSgTEi75KZozL0j7pvknZN.jpeg" alt="Profile Picture" class="profile-image">
+                </div>
+                <p class="profile-quote">"A Guardian that captures the UN's purpose"</p>
+                <div class="profile-details">
+                    <p><i class="fas fa-birthday-cake"></i> Age - 28</p>
+                    <p><i class="fas fa-briefcase"></i> Work - Environmental Scientist</p>
+                    <p><i class="fas fa-heart"></i> Family - Single</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Location - London</p>
+                </div>
+
+                <div class="skills-section">
+                    <h3>Skills</h3>
+                    <div class="skill">
+                        <span>Conservation</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%;">85%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Sustainability</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;">90%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Research</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%;">75%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Teamwork</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;">80%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Column - About, Goals, Frustrations, Experience -->
+            <div class="profile-middle-column">
+                <div class="profile-card about-section">
+                    <div class="section-icon"><i class="fas fa-user"></i></div>
+                    <h3>About Me</h3>
+                    <p>I'm a passionate Environmental Scientist dedicated to making a positive impact on our planet. With expertise in conservation and sustainability, I work tirelessly to protect our natural resources and promote eco-friendly practices. My goal is to inspire others to join the movement for a greener future.</p>
+                </div>
+
+                <div class="profile-card goals-section">
+                    <div class="section-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Goals</h3>
+                    <ul>
+                        <li>Goal 1 - Reduce carbon footprint in local communities</li>
+                        <li>Goal 2 - Implement sustainable practices in urban areas</li>
+                        <li>Goal 3 - Educate youth on environmental conservation</li>
+                        <li>Goal 4 - Develop innovative solutions for waste management</li>
+                    </ul>
+                </div>
+
+                <div class="profile-card frustrations-section">
+                    <div class="section-icon">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <h3>Frustrations</h3>
+                    <ul>
+                        <li>Slow adoption of renewable energy sources</li>
+                        <li>Lack of awareness about environmental issues</li>
+                    </ul>
+                </div>
+
+                <div class="profile-card experience-section">
+                    <div class="section-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Experience</h3>
+                    <ul>
+                        <li>Environmental Scientist - Conducted research on sustainable land use and conservation</li>
+                        <li>Conservation Volunteer - Participated in reforestation projects and wildlife protection initiatives</li>
+                        <li>Sustainability Consultant - Advised businesses on implementing eco-friendly practices</li>
+                        <li>Environmental Educator - Developed and delivered educational programs on conservation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Column - Volunteering, UN Goals, Contact -->
+            <div class="profile-right-column">
+                <div class="profile-card volunteering-section">
+                    <div class="section-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <h3>Volunteering Availability</h3>
+                    <div class="calendar">
+                        <table class="availability-table">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                                <th>Sun</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>AM</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="available"><i class="fas fa-check"></i></td>
+                                <td class="available"><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>PM</td>
+                                <td></td>
+                                <td class="available"><i class="fas fa-check"></i></td>
+                                <td></td>
+                                <td class="available"><i class="fas fa-check"></i></td>
+                                <td></td>
+                                <td class="available"><i class="fas fa-check"></i></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="profile-card un-goals-section">
+                    <div class="section-icon"><i class="fas fa-globe-americas"></i></div>
+                    <h3>UN Goals I Support</h3>
+                    <div class="un-goals-icons">
+                        <div class="un-goal">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nopoverty-Ruhtm0LSPvKV1CbfDTGeFnOde9wsv7.png" alt="UN Goal: No Poverty" class="un-goal-icon">
+                            <span class="un-goal-text">No Poverty</span>
+                        </div>
+                        <div class="un-goal">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/zerohunger-PTg67Er6CgluYtUJfnhp5OPV9NCPRP.png" alt="UN Goal: Zero Hunger" class="un-goal-icon">
+                            <span class="un-goal-text">Zero Hunger</span>
+                        </div>
+                        <div class="un-goal">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/genderequality-bNgTwwrTxRr1VlfEbZHueeMSEAaFbZ.png" alt="UN Goal: Gender Equality" class="un-goal-icon">
+                            <span class="un-goal-text">Gender Equality</span>
+                        </div>
+                        <div class="bottom-row">
+                            <div class="un-goal">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Sustainable_Development_Goal_14-Qk8AEExDe31ut472aOpVUlZaIMJwcR.png" alt="UN Goal: Life Below Water" class="un-goal-icon">
+                                <span class="un-goal-text">Life Below Water</span>
+                            </div>
+                            <div class="un-goal">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lifeonland-JsO9RJg7fpymn0Urjb5mkyleYduiCt.png" alt="UN Goal: Life On Land" class="un-goal-icon">
+                                <span class="un-goal-text">Life On Land</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-card contact-section">
+                    <div class="section-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Contact Me</h3>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Message" required></textarea>
+                        <button type="submit" class="send-button">Send</button>
+                    </form>
+                </div>
+
+                <div class="profile-card contact-details">
+                    <h3>Contact Details</h3>
+                    <table class="contact-table">
+                        <tr>
+                            <th>Contact Method</th>
+                            <th>Details</th>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>dexter.morgan@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>+1 (123) 456-7890</td>
+                        </tr>
+                        <tr>
+                            <td>Office Address</td>
+                            <td>123 Main Street, Suite 400, London, UK</td>
+                        </tr>
+                        <tr>
+                            <td>LinkedIn</td>
+                            <td>linkedin.com/in/dextermorgan</td>
+                        </tr>
+                        <tr>
+                            <td>Twitter</td>
+                            <td>@dextermorgan</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container register-button">
+        <a href="#volunteer-form" class="open-btn">REGISTER AS VOLUNTEER</a>
+    </div>
+
+    <!-- CSS-only modal implementation using :target pseudo-class -->
+    <div id="volunteer-form" class="modal-container">
+        <div class="modal">
+            <a href="#" class="close-btn">&times;</a>
+            <h1>Volunteer Registration</h1>
+
+            <form action="thank-you.html" method="post" class="volunteer-form">
+                <div class="form-step active" id="step1">
+                    <h2>Step 1: Personal Details</h2>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="surname">Surname:</label>
+                        <input type="text" id="surname" name="surname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <input type="text" id="gender" name="gender" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="residence">Area of residence:</label>
+                        <input type="text" id="residence" name="residence" required>
+                    </div>
+                    <div class="form-navigation">
+                        <a href="#step2" class="form-button next">Next</a>
+                    </div>
+                </div>
+
+                <div class="form-step" id="step2">
+                    <h2>Step 2: Contact Information</h2>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="organization">Organization:</label>
+                        <input type="text" id="organization" name="organization">
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" name="country" required>
+                    </div>
+                    <div class="form-navigation">
+                        <a href="#step1" class="form-button back">Back</a>
+                        <a href="#step3" class="form-button next">Next</a>
+                    </div>
+                </div>
+
+                <div class="form-step" id="step3">
+                    <h2>Step 3: Education & Skills</h2>
+                    <div class="form-group">
+                        <label for="education">Education level:</label>
+                        <input type="text" id="education" name="education" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="languages">Language proficiencies:</label>
+                        <input type="text" id="languages" name="languages" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="qualifications">Related qualifications:</label>
+                        <textarea id="qualifications" name="qualifications"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="interests">Areas of interest or expertise:</label>
+                        <textarea id="interests" name="interests"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Prior experiences:</label>
+                        <textarea id="experience" name="experience"></textarea>
+                    </div>
+                    <div class="form-navigation">
+                        <a href="#step2" class="form-button back">Back</a>
+                        <a href="#step4" class="form-button next">Next</a>
+                    </div>
+                </div>
+
+                <div class="form-step" id="step4">
+                    <h2>Step 4: Availability & Preferences</h2>
+                    <div class="form-group">
+                        <label for="hours">Available hours per week:</label>
+                        <input type="number" id="hours" name="hours" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="district">District comfortable with working:</label>
+                        <input type="text" id="district" name="district">
+                    </div>
+                    <div class="form-group">
+                        <label for="preference">Area of energy preference:</label>
+                        <input type="text" id="preference" name="preference">
+                    </div>
+                    <div class="form-group">
+                        <label for="cultural">Cultural insights:</label>
+                        <textarea id="cultural" name="cultural"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="outcome">Expected outcome:</label>
+                        <textarea id="outcome" name="outcome"></textarea>
+                    </div>
+                    <div class="form-navigation">
+                        <a href="#step3" class="form-button back">Back</a>
+                        <button type="submit" class="form-button submit">Submit</button>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-step active" data-step="1"></div>
+                    <div class="progress-step" data-step="2"></div>
+                    <div class="progress-step" data-step="3"></div>
+                    <div class="progress-step" data-step="4"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Thank you message (would normally be a separate page) -->
+    <div id="thank-you" class="modal-container">
+        <div class="modal">
+            <a href="#" class="close-btn">&times;</a>
+            <h1>Thank You!</h1>
+            <p>Your volunteer registration has been submitted successfully.</p>
+            <p>We will contact you shortly with more information.</p>
+            <div class="form-navigation">
+                <a href="#" class="form-button">Close</a>
+            </div>
+        </div>
+    </div>
+</div> <!-- End of page-content -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>More Content</h4>
+                <ul>
+                    <li><a href="content_ST1.html">Green Horizon</a></li>
+                    <li><a href="content_ST2.html">Forests: The Lungs of Our Planet</a></li>
+                    <li><a href="content_ST3.html">Protecting Earth's Terrestrial Ecosystems </a></li>
+                    <li><a href="content_ST4.html">Wildlife Conservation</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="team.html">About Us</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                    <a href="#"><i class="bx bxl-tiktok"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="#"><i class="bx bxl-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Editor Pages</h4>
+                <ul>
+                    <li><a href="pageEditor_ST1.html">Editor 1</a></li>
+                    <li><a href="pageEditor_ST2.html">Editor 2</a></li>
+                    <li><a href="pageEditor_ST3.html">Editor 3</a></li>
+                    <li><a href="pageEditor_ST4.html">Editor 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <p>&copy; 2024 Green Horizon. All rights reserved</p>
+    </div>
+    <div class="page editor">
+        <p style="color: white;">Student 4</p>
+        <a class="page-editor-link" href="pageEditor_ST4.html">Vidu Tennakoon</a>
+    </div>
+</footer>
+</body>
+</html>
+

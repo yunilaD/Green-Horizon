@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="global.css">
+  <link rel="stylesheet" type="text/css" href="table.css">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+
+  <title>Endangered Animals</title>
+</head>
+<body>
+
+<header class="header">
+  <img src="media/greenhorizon.png" alt="Green Horizon logo">
+  <ul class="navbar">
+    <li><a href="home.html"><b>Home</b></a></li>
+    <li><a href="sitemap.html"><b>Sitemap</b></a></li>
+    <li><a href="feedback.html"><b>Feedback</b></a></li>
+    <li><a href="team.html"><b>About Us</b></a></li>
+    <li><a href="profile.html"><b>Profile</b></a></li>
+  </ul>
+</header>
+
+<div class="AnimalBackground">
+  <div class="page-title">
+    <h1>Endangered Animals Around the World</h1>
+    <p>Learn about critically endangered species and the conservation efforts to protect them</p>
+  </div>
+
+  <div class="table-controls">
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for animals...">
+      <button id="searchButton"><i class='bx bx-search'></i></button>
+    </div>
+
+    <div class="filter-container">
+      <select id="regionFilter">
+        <option value="all">All Regions</option>
+        <option value="Africa">Africa</option>
+        <option value="Asia">Asia</option>
+        <option value="Australia">Australia</option>
+        <option value="North America">North America</option>
+        <option value="Antarctica">Antarctica</option>
+      </select>
+
+      <select id="statusFilter">
+        <option value="all">All Statuses</option>
+        <option value="Critically Endangered">Critically Endangered</option>
+        <option value="Endangered">Endangered</option>
+        <option value="Vulnerable">Vulnerable</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="table-container">
+    <table id="endangeredTable">
+      <thead>
+      <tr>
+        <th class="sortable" data-sort="name">Animal <i class='bx bx-sort-alt-2'></i></th>
+        <th class="sortable" data-sort="status">Status <i class='bx bx-sort-alt-2'></i></th>
+        <th class="sortable" data-sort="region">Region <i class='bx bx-sort-alt-2'></i></th>
+        <th class="sortable" data-sort="population">Population <i class='bx bx-sort-alt-2'></i></th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr data-status="Critically Endangered" data-region="Asia">
+        <td>Amur Leopard</td>
+        <td><span class="status critical">Critically Endangered</span></td>
+        <td>Asia</td>
+        <td>84</td>
+        <td><button class="details-btn" data-id="1">Details</button></td>
+      </tr>
+      <tr data-status="Critically Endangered" data-region="Asia">
+        <td>Sumatran Orangutan</td>
+        <td><span class="status critical">Critically Endangered</span></td>
+        <td>Asia</td>
+        <td>14,000</td>
+        <td><button class="details-btn" data-id="2">Details</button></td>
+      </tr>
+      <tr data-status="Endangered" data-region="Africa">
+        <td>African Elephant</td>
+        <td><span class="status endangered">Endangered</span></td>
+        <td>Africa</td>
+        <td>415,000</td>
+        <td><button class="details-btn" data-id="4">Details</button></td>
+      </tr>
+      <tr data-status="Critically Endangered" data-region="Africa">
+        <td>Black Rhino</td>
+        <td><span class="status critical">Critically Endangered</span></td>
+        <td>Africa</td>
+        <td>5,500</td>
+        <td><button class="details-btn" data-id="5">Details</button></td>
+      </tr>
+      <tr data-status="Endangered" data-region="North America">
+        <td>Florida Panther</td>
+        <td><span class="status endangered">Endangered</span></td>
+        <td>North America</td>
+        <td>230</td>
+        <td><button class="details-btn" data-id="6">Details</button></td>
+      </tr>
+      <tr data-status="Vulnerable" data-region="North America">
+        <td>Polar Bear</td>
+        <td><span class="status vulnerable">Vulnerable</span></td>
+        <td>North America</td>
+        <td>22,000-31,000</td>
+        <td><button class="details-btn" data-id="7">Details</button></td>
+      </tr>
+      <tr data-status="Endangered" data-region="Australia">
+        <td>Tasmanian Devil</td>
+        <td><span class="status endangered">Endangered</span></td>
+        <td>Australia</td>
+        <td>25,000</td>
+        <td><button class="details-btn" data-id="10">Details</button></td>
+      </tr>
+      <tr data-status="Vulnerable" data-region="Australia">
+        <td>Koala</td>
+        <td><span class="status vulnerable">Vulnerable</span></td>
+        <td>Australia</td>
+        <td>43,000-100,000</td>
+        <td><button class="details-btn" data-id="11">Details</button></td>
+      </tr>
+      <tr data-status="Vulnerable" data-region="Antarctica">
+        <td>Emperor Penguin</td>
+        <td><span class="status vulnerable">Vulnerable</span></td>
+        <td>Antarctica</td>
+        <td>270,000-280,000</td>
+        <td><button class="details-btn" data-id="13">Details</button></td>
+      </tr>
+      <tr data-status="Endangered" data-region="Asia">
+        <td>Snow Leopard</td>
+        <td><span class="status endangered">Endangered</span></td>
+        <td>Asia</td>
+        <td>4,080-6,590</td>
+        <td><button class="details-btn" data-id="14">Details</button></td>
+      </tr>
+      <tr data-status="Critically Endangered" data-region="Asia">
+        <td>South China Tiger</td>
+        <td><span class="status critical">Critically Endangered</span></td>
+        <td>Asia</td>
+        <td>0 (in wild)</td>
+        <td><button class="details-btn" data-id="15">Details</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+  <div class="stats-section">
+    <h2>Conservation Status Overview</h2>
+    <div class="stats-container">
+      <div class="stat-card">
+        <div class="stat-icon critical-icon">
+          <i class='bx bx-error-circle'></i>
+        </div>
+        <div class="stat-info">
+          <h3>Critically Endangered</h3>
+          <p>Facing an extremely high risk of extinction in the wild</p>
+          <div class="stat-count" id="criticalCount">4 species</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon endangered-icon">
+          <i class='bx bx-error'></i>
+        </div>
+        <div class="stat-info">
+          <h3>Endangered</h3>
+          <p>Facing a very high risk of extinction in the wild</p>
+          <div class="stat-count" id="endangeredCount">4 species</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon vulnerable-icon">
+          <i class='bx bx-error-alt'></i>
+        </div>
+        <div class="stat-info">
+          <h3>Vulnerable</h3>
+          <p>Facing a high risk of extinction in the wild</p>
+          <div class="stat-count" id="vulnerableCount">3 species</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>More Contents</h4>
+        <ul>
+          <li><a href="content_ST1.html">Green Horizon</a></li>
+          <li><a href="content_ST2.html">Forests: The Lungs of Our Planet</a></li>
+          <li><a href="content_ST3.html">Protecting Earth's Terrestrial Ecosystems </a></li>
+          <li><a href="content_ST4.html">Wildlife Conservation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="feed.html">Feedback</a></li>
+          <li><a href="team.html">About Us</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+          <a href="#"><i class="bx bxl-tiktok"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Editor Pages</h4>
+        <ul>
+          <li><a href="pageEditor_ST1.html">Editor 1</a></li>
+          <li><a href="pageEditor_ST2.html">Editor 2</a></li>
+          <li><a href="pageEditor_ST3.html">Editor 3</a></li>
+          <li><a href="pageEditor_ST4.html">Editor 4</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-bar">
+    <p>&copy; 2024 Life On Land. All rights reserved</p>
+  </div>
+  <div class="page editor">
+    <p style="color: white;">Student 2</p>
+    <a class="page-editor-link" href="pageEditor_ST2.html">Yunila Dissnayake</a>
+  </div>
+</footer>
+</body>
+</html>
+
